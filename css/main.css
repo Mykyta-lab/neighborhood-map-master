@@ -1,0 +1,360 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.toggle {
+    display: none;
+    color: #eee;
+    top: 0px;
+    left: 0px;
+    margin-left: 2px;
+}
+
+#nav {
+    background-color: #333;
+    overflow: scroll;
+
+}
+
+.loadingCursor {
+    cursor: progress;
+}
+
+#loadingData {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu {
+    color: white;
+    text-align: center;
+    border-bottom: 5px solid white;
+}
+
+.menu > ul {
+    text-align: left;
+}
+
+.menu > p {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.menu > p:hover {
+    background: white;
+    color: black;
+}
+
+.optionForm {
+    text-align: left;
+    padding: 10px 0px 10px 30px;
+}
+
+#submitButton {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+#submitButton:hover {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.collapsable {
+    display: none;
+}
+
+.aboutText {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.itemSelect {
+    background-color: white;
+    color: black !important;
+}
+
+.itemSelect > span {
+    color: black;
+}
+
+.listItem {
+    cursor: pointer;
+}
+
+.sidebar {
+     position: relative;
+}
+
+.logospace {
+    background: #2a2a2a;
+}
+
+.logo {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+}
+
+#logos {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+#facebook:hover {
+    color: #3b5998;
+}
+#twitter:hover {
+    color: #1da1f2;
+}
+#linkedin:hover {
+    color: #1c87bd;
+}
+#github:hover {
+    color: #4078c0;
+}
+
+.title {
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: #eee;
+  border-bottom: 1px solid #222;
+  background: #2a2a2a;
+  margin: 0;
+  padding: 0px 10px 0px 10px;
+
+}
+
+.item {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.item li {
+  position: relative;
+  display: block;
+  padding: 15px 15px 15px 0px;
+  font-size: 12px;
+  color: #eee;
+  border-bottom: 1px solid #222;
+}
+
+.markerTitle {
+    font-weight: bold;
+    text-align: center;
+}
+
+.innerContent > p > a {
+    text-decoration: underline;
+}
+
+.subHeading {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.subDivider {
+    border-top: 1px dashed white;
+}
+
+.optionHeading {
+    font-weight: bold;
+}
+
+.innerContent {
+    padding-left: 25px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+.tipContent {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.descriptionList {
+    list-style: none;
+    padding-left: 10px;
+}
+
+select, input {
+    background-color: white;
+    color: black;
+}
+
+button {
+    border-radius: 0px;
+    background-color: black;
+    color: white;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+    #nav {
+        width: 2em;
+    }
+
+    #map {
+        width: calc(100vw - 2em);
+    }
+
+    .toggle {
+        display: block;
+    }
+    .toggleOnMenu {
+        display: block;
+    }
+
+    .sidebar {
+        position: absolute;
+        top:0;
+        background-color: #333;
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-100vw, 0);
+        z-index: 1;
+    }
+
+    .open {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      width: 100vw;
+    }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
