@@ -35,8 +35,6 @@ The site uses the [Google Maps Javascript API](https://developers.google.com/map
 
 ## Frameworks
 
-* [Knockout.js](http://knockoutjs.com/)
-* [Knockout.js Projections Plugin](https://github.com/SteveSanderson/knockout-projections)
 * [Moment.js](http://momentjs.com/)
 * [grd.css](https://github.com/1000ch/grd)
 * [Normalize.css](https://necolas.github.io/normalize.css/)
